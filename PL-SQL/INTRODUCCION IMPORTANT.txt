@@ -1,0 +1,101 @@
+oracle version
+: 11g, 12c, 18c
+
+herramientas
+- Oracle Express Edition
+- SQLDeveloper
+
+CONTENIDO DEL CURSO
+- introduccion a pl/sql
+- prepara infraestructura
+- bloques pl-sql
+- variables, estructura de control, bucloes
+- uso de sql en pl/sql
+- excepciones
+- colecciones y tipos asociados
+- cursoes
+- procedimientos y funciones
+- paquetes
+- triggers
+
+
+************************************************************
+************************************************************
+    QUERY QUE NOS PERMITE MOSTRAR LOS DIFERENTES DATOS DE LA DB COMO
+    PROCEDURE,TRIGGERS, TABLE, SEQUENCE
+    
+        *- SELECT * FROM USER_OBJECTS WHERE OBJECT_TYPE='PROCEDURE';
+
+    QUERY QUE NOS PERMITE MOSTRAR EL OBJECT_TYPE(TRIGGER,TABLE...) Y LA CANTIDAD EXISTENTE
+        
+        *- SELECT OBJECT_TYPE,COUNT(*) FROM USER_OBJECTS GROUP BY OBJECT_TYPE
+
+    QUERY QUE NOS PERMITE VER EL CODIGO para ver solo el texto por si lo queremos copiar colocamos TEXT en vez de *
+        *- SELECT * FROM USER_SOURCE WHERE NAME='P1'
+
+
+
+para evitar lo de quota ...
+ALTER USER HR QUOTA UNLIMITED ON USERS
+
+
+
+Que es PL/SQL
+•	Una extensión de SQL de Oracle
+•	SQL no es un lenguaje procedural
+•	PL/SQL permite suplir estas carencias
+•	Permite acceder una mayor potencia la hora de acceder a db Oracle
+PL/SQL nos permitirá crear aplicaciones mas potentes con mejores características
+
+BLOQUES PL/SQL
+•	El objeto básico es un bloque
+•	Los bloques están divididos en las siguientes secciones
+DECLARE, BEGIN, EXCEPTION, END
+
+TIPOS DE PROGRAMAS PL/SQL
+Distintos tipo de componentes PL/SQL
+•	Bloques anónimos
+•	Procedimientos y funciones
+•	Triggers
+
+ORACLE EXPRES : DB
+SQL-DEVELOPER : permite trabajar con PL/SL
+
+	
+
+DESBLOQUEAR USUARIO 
+ALER USER USERNAME ACCOUNT UNLOCK
+
+
+
+
+
+
+Bloques anónimos
+
+Se delcaran entre begin ---code--- end;
+
+Variables 
+Tipos de variables
+•	Escalares
+•	Compuestas
+•	De referencia
+•	LOBS. Large Objects
+•	Bind variables. Asociadas a los comandos SQL
+•	…
+Declare
+edad numer(2):=12
+
+
+
+
+
+
+
+
+
+
+
+
+
+
